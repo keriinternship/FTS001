@@ -1,0 +1,35 @@
+.type-gioithieu .content-container {
+  background-image: url(../images/gioithieu.png);
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 400px;
+  opacity: 0.8; }
+.type-gioithieu .breadcrumb {
+  background: #fff; }
+.type-gioithieu .title-product {
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 23px;
+  padding: 8px;
+  color: #0b0479;
+  font-style: italic; }
+.type-gioithieu .note {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  line-height: 25px;
+  color: #000;
+  padding: 5px; }
+.type-gioithieu .img-bg {
+  text-align: center; }
+.type-gioithieu .map {
+  text-align: center; }
+.type-gioithieu .swiper-container {
+  width: 100%;
+  height: auto; }
+.type-gioithieu .swiper-slide {
+  text-align: center;
+  font-size: 18px; }

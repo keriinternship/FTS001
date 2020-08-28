@@ -1,0 +1,74 @@
+.type-thongtinkhachhang {
+  background-color: antiquewhite; }
+  .type-thongtinkhachhang .box-banner {
+    border-right: 1px dotted;
+    background: #81DAF5; }
+  .type-thongtinkhachhang .hello {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .type-thongtinkhachhang .content {
+    padding: 20px; }
+  .type-thongtinkhachhang .passenger {
+    color: blue;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px #dee2e6 dotted;
+    margin-top: 10px;
+    text-transform: uppercase; }
+  .type-thongtinkhachhang .contentleftinrow {
+    float: left;
+    width: 40%;
+    line-height: 20px;
+    padding-bottom: 20px; }
+  .type-thongtinkhachhang .contentrightinrow {
+    float: right;
+    width: 60%;
+    line-height: 20px;
+    padding-bottom: 20px;
+    color: blue; }
+  .type-thongtinkhachhang .table {
+    color: blue; }
+  .type-thongtinkhachhang .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    padding-right: 31px;
+    border-top: 1px solid #dee2e6; }
+  .type-thongtinkhachhang .textcolor {
+    color: red; }
+  .type-thongtinkhachhang .request {
+    color: blue;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px #dee2e6 dotted;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding-bottom: 20px; }
+  .type-thongtinkhachhang textarea {
+    margin: 0px;
+    width: 733px;
+    height: 118px;
+    overflow: auto;
+    resize: auto;
+    background-color: #fff; }
+  .type-thongtinkhachhang .checkbutton {
+    padding-top: 20px;
+    padding-bottom: 30px; }
+  .type-thongtinkhachhang button {
+    float: right;
+    border-radius: 5px;
+    font-size: 20px;
+    color: blue;
+    font-family: monospace;
+    padding: 5px;
+    line-height: 23px;
+    font-weight: 400;
+    background: yellow;
+    border: none; }
+  .type-thongtinkhachhang .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center; }
