@@ -10,7 +10,6 @@
     padding: 0;
     z-index: 1; }
     .search-flight .form-search-flight .wrapfrm {
-      color: #0270b5;
       display: block;
       float: left;
       width: 100%;
@@ -18,7 +17,7 @@
       margin-left: 0;
       border-radius: 10px; }
       .search-flight .form-search-flight .wrapfrm .header-search {
-        background: #026987;
+        background: #0270b5;
         border-radius: 10px 10px 0px 0px;
         width: 40%;
         padding: 14px 27px 6px;
@@ -31,7 +30,7 @@
           text-transform: uppercase;
           font-weight: normal; }
       .search-flight .form-search-flight .wrapfrm .tad-search {
-        background: #026987;
+        background: #0270b5;
         border-radius: 0px 10px 10px 10px; }
         .search-flight .form-search-flight .wrapfrm .tad-search .black {
           clear: both;
@@ -91,15 +90,13 @@
 
 .content-box {
   border: 1px solid #dbdbdb;
-  border-radius: 5px;
-  background-color: #f8f8f8;
-  padding: 15px;
-  padding-top: 5px; }
+  border-radius: 5px; }
   .content-box .title {
+    background-color: #0270b5;
     position: relative;
     font-size: 16px;
     color: #ff7a00;
-    padding: 10px 0 0;
+    padding: 10px 0 1px;
     display: block;
     text-decoration: none;
     text-transform: uppercase; }
@@ -108,14 +105,16 @@
       width: 10%;
       top: 0%;
       right: 25%; }
-  .content-box p {
-    text-align: justify;
-    margin-top: 10px;
-    line-height: 18px;
-    height: 90px;
-    overflow: hidden;
-    font-size: 13px;
-    padding-bottom: 10px; }
+  .content-box .padding {
+    padding: 0 15px 15px; }
+    .content-box .padding p {
+      text-align: justify;
+      margin-top: 15px;
+      line-height: 18px;
+      height: 105px;
+      margin-bottom: 5px;
+      overflow: hidden;
+      font-size: 16px; }
 
 .video {
   margin: 5px 0; }
@@ -130,20 +129,25 @@
   padding-bottom: 8px;
   overflow: hidden; }
   .latest-best-price .title {
-    position: relative; }
-    .latest-best-price .title h2 {
-      line-height: 30px;
-      font-size: 20px;
-      background: #ececec;
-      color: #5e5b5b;
-      border-bottom: 1px solid #ccc;
-      text-align: center; }
+    position: relative;
+    background-color: #0270b5;
+    position: relative;
+    color: #ff7a00;
+    padding: 10px 0 1px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc; }
     .latest-best-price .title .xemthem {
-      font-weight: 700;
+      font-weight: 500;
       position: absolute;
       display: block;
-      right: 20px;
-      top: 10px; }
+      right: 2%;
+      font-size: 12px;
+      color: #dbdbdb;
+      top: 55%;
+      text-transform: capitalize; }
   .latest-best-price .data-list {
     width: 100%; }
     .latest-best-price .data-list .itinerary {
@@ -264,7 +268,7 @@
     font-style: italic;
     font-weight: 700;
     text-align: center;
-    width: 100%;
+    width: 90%;
     margin: 20px;
     line-height: 35px; }
   .content-cmt .list-aboutus {
@@ -324,7 +328,7 @@
   font-style: italic;
   font-weight: 700;
   text-align: center;
-  width: 100%;
+  width: 90%;
   margin: 20px;
   line-height: 35px; }
 .content-question .titile_news {

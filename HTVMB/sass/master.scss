@@ -1,3 +1,7 @@
+$bg-title: #0270b5;
+$color-nav: #dba510;
+$bg-navh:  #dba510;
+$color-navh: #000;
 body {
     background-image: url("../images/bg-body.png");
     width: 100%;
@@ -32,19 +36,29 @@ body {
 }
 //Nav
 .bg-nav {
-    background-color: #ff5115;
+    background-color: $bg-title;
 
     .nav {
-        li {
+        .nav-item {     
+            color: $color-nav ;       
             padding: 10px 58px;
-            a {
+            .nav-link {
+                
+            color: $color-nav ;  
                 text-align: center;
                 padding: 0px 10px;
-                color: #fff !important;
-                font-size: 20px;
+                font-size: 19px;
                 text-transform: uppercase;
             }
+            &:hover{
+                .nav-link{
+                    color: $color-navh;
+                }
+            
+            background-color: $bg-navh;
         }
+        }
+       
     }
 }
 @media only screen and (max-width: 993px) {
@@ -71,6 +85,7 @@ body {
 // Cac loai ve
 .type-new {
     background-color: #266999;
+    padding: 30px 0;
     .title {
         font-family: Bebeboo-Regular;
         font-weight: 400;
@@ -113,7 +128,7 @@ body {
 .footer {
     background-color: #266999;
     color: #fff;
-    padding: 50px 0;
+    padding: 30px 0;
 
     p {
         font-size: 20px;

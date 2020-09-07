@@ -1,8 +1,15 @@
 .type-chitiet {
     .max-title {
+        background: #fff;
+        padding-top: 20px;
         .title-sg {
+            padding-bottom: 20px;
             font-family: arial, sans-serif;
             font-weight: 400;
+            color: #ff7a00;
+            padding-top: 20px;
+            border-radius: 10px;
+            background: #0270b5;
             font-size: 20px;
             line-height: 23px;
             text-align: center;
@@ -55,8 +62,10 @@
         }
     }
     .max-view {
+        background: #fff;
         .category {
             font-family: Bebeboo-SemiBold;
+            padding-top: 40px;
             font-size: 20px;
             border-bottom: 1px solid #ccc;
             margin-bottom: 15px;

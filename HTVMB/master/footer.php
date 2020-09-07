@@ -11,10 +11,14 @@ $url_path = $url_host . $matches[1][0];
 
 $url_path = str_replace('\\', '/', $url_path);
 ?>
+<?php
+include "./master/new-content.php";
+?>
 <footer>
+
     <div class="footer">
         <div class="container">
-            
+
             <div class="row">
                 <div class="col-md-2">
                     <h5>CATEGORIES</h5>

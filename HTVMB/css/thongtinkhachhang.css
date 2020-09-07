@@ -1,70 +1,76 @@
-.type-thongtinkhachhang {
-  background-color: antiquewhite; }
-  .type-thongtinkhachhang .box-banner {
-    border-right: 1px dotted;
-    background: #81DAF5; }
-  .type-thongtinkhachhang .hello {
+.type-thongtinkhachhang .box-banner {
+  padding-right: 0px;
+  padding-left: 0;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px #888;
+  background: #fff; }
+  .type-thongtinkhachhang .box-banner .title {
+    padding-left: 20px; }
+  .type-thongtinkhachhang .box-banner .infocus {
+    padding-left: 20px; }
+  .type-thongtinkhachhang .box-banner .domail {
+    padding-left: 20px; }
+  .type-thongtinkhachhang .box-banner .comment {
+    padding-left: 20px; }
+  .type-thongtinkhachhang .box-banner .hello {
     padding-top: 20px;
     padding-bottom: 20px; }
-  .type-thongtinkhachhang .content {
-    padding: 20px; }
-  .type-thongtinkhachhang .passenger {
-    color: blue;
+  .type-thongtinkhachhang .box-banner .content {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .type-thongtinkhachhang .box-banner .passenger {
+    color: #ff7a00;
     font-size: 20px;
-    margin-bottom: 10px;
-    border-bottom: 1px #dee2e6 dotted;
-    margin-top: 10px;
-    text-transform: uppercase; }
-  .type-thongtinkhachhang .contentleftinrow {
+    text-transform: uppercase;
+    background: #0270b5;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px; }
+  .type-thongtinkhachhang .box-banner .contentleftinrow {
     float: left;
     width: 40%;
     line-height: 20px;
     padding-bottom: 20px; }
-  .type-thongtinkhachhang .contentrightinrow {
+  .type-thongtinkhachhang .box-banner .contentrightinrow {
     float: right;
     width: 60%;
     line-height: 20px;
     padding-bottom: 20px;
-    color: blue; }
-  .type-thongtinkhachhang .table {
-    color: blue; }
-  .type-thongtinkhachhang .table td {
-    padding: 0.75rem;
+    color: black; }
+  .type-thongtinkhachhang .box-banner .table {
+    color: black; }
+  .type-thongtinkhachhang .box-banner .table td {
+    padding: 10px 21px 0 0;
     vertical-align: top;
-    padding-right: 31px;
     border-top: 1px solid #dee2e6; }
-  .type-thongtinkhachhang .textcolor {
+  .type-thongtinkhachhang .box-banner .textcolor {
     color: red; }
-  .type-thongtinkhachhang .request {
-    color: blue;
-    font-size: 20px;
-    margin-bottom: 10px;
-    border-bottom: 1px #dee2e6 dotted;
-    margin-top: 10px;
-    text-transform: uppercase;
-    padding-bottom: 20px; }
-  .type-thongtinkhachhang textarea {
+  .type-thongtinkhachhang .box-banner textarea {
     margin: 0px;
-    width: 733px;
+    width: 630px;
     height: 118px;
     overflow: auto;
     resize: auto;
     background-color: #fff; }
-  .type-thongtinkhachhang .checkbutton {
+  .type-thongtinkhachhang .box-banner .checkbutton {
     padding-top: 20px;
     padding-bottom: 30px; }
-  .type-thongtinkhachhang button {
+  .type-thongtinkhachhang .box-banner button {
     float: right;
-    border-radius: 5px;
+    border-radius: 7px;
     font-size: 20px;
-    color: blue;
+    color: black;
     font-family: monospace;
-    padding: 5px;
+    padding: 8px;
     line-height: 23px;
     font-weight: 400;
-    background: yellow;
+    background: #fece2f;
     border: none; }
-  .type-thongtinkhachhang .text {
+    .type-thongtinkhachhang .box-banner button a {
+      color: #fff;
+      text-decoration: none; }
+  .type-thongtinkhachhang .box-banner .text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -72,3 +78,6 @@
     bottom: 8px;
     width: 100%;
     text-align: center; }
+  .type-thongtinkhachhang .box-banner .pd {
+    padding: 5px;
+    margin-bottom: 5px; }

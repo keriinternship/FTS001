@@ -49,7 +49,6 @@ file_put_contents("css/gioithieu.css",$style);
     <?php
    include "./master/header.php";
   include './gioithieu-content.php';
-   include "./master/new-content.php";
    include "./master/footer.php";
      ?>
 </body>

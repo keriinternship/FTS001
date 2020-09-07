@@ -21,11 +21,19 @@ $url_path = str_replace('\\', '/', $url_path);
     
     fwrite($css,$styles);
 
-    $styles2 = $scss->compile('@import "ThongtinVe.scss";');
+    $styles1 = $scss->compile('@import "ThongtinVe.scss";');
 
-    $css2 = fopen('css/ThongtinVe.css','w');
+    $css1 = fopen('css/ThongtinVe.css','w');
+    
+    fwrite($css1,$styles1);
+
+    // sass->css frm-timve
+    $styles2 = $scss->compile('@import "frm-timve.scss";');
+
+    $css2 = fopen('css/frm-timve.css','w');
     
     fwrite($css2,$styles2);
+    
 
    
 ?>
@@ -51,7 +59,8 @@ $url_path = str_replace('\\', '/', $url_path);
 
     <!-- css -->
     <link href="<?php echo $url_path ?>/css/master.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo $url_path ?>/css/ThongtinVe.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $url_path ?>/css/ThongtinVe.css" rel="stylesheet" type="text/css" />  
+    <link href="<?php echo $url_path ?>/css/frm-timve.css" rel="stylesheet" type="text/css" />
     <!-- js -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/script.js"></script>
@@ -64,7 +73,6 @@ $url_path = str_replace('\\', '/', $url_path);
   
   include "./master/header.php";
   include "./ThongtinVe-content.php";
-  include "./master/new-content.php";
   include "./master/footer.php";
    ?>
 </body>

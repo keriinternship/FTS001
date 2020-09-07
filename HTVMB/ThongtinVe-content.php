@@ -123,45 +123,14 @@ $result = $mysqli->query("SELECT `city_id`,`name_city`,`code` FROM `city_code` O
             </div>
         </div>
         <div class="col-md-4">
-            <div class="find bg-white">
-                <form action="search.php" method="get">
-                    <h3 class="find-banner" style="color: red;"><i class="fa fa-plane" aria-hidden="true"
-                            style="color: blue;"></i> Tìm kiếm chuyến bay</h3>
-                    <div class="select">
-                        <p class="find-select">
-                            <input name="direction" id="loaive_r" value="1" type="radio" class="loaive"> <label
-                                for="loaive_o">Khứ hồi</label></p>
-                        <p class="find-select1">
-                            <input name="direction" id="loaive_l" value="1" type="radio" class="loaive"> <label
-                                for="loaive_o">Một chiều</label></p>
-                    </div>
-                    <div class="cars ">
-                        <label for="cars">Điểm đi và điểm đến</label>
-                        <select id="search" type="text" placeholder="Mã chuyến bay" name="key">
-                            <option value="Select School">---Chọn---</option>
-                            <?php
-                        while ($row = mysqli_fetch_array($result)) {
-                            echo "<option value='" . $row['code'] . "'>" . $row['name_city'] . "(" . $row['code'] . ")"."</option>";
-                        }
-                        ?>
-                        </select>
-                        <br><br>
 
-                    </div>
-                    <div class="text-right  ">
-
-                        <i class="fa fa-search" aria-hidden="true"></i>
-
-                        <input class="btn submit" id="submit" type="submit" value="Tìm kiếm">
-                    </div>
-
-            </div><br>
             <div class="sort bg-white">
                 <h3 class="big-title"> Sắp xếp theo giá</h3>
                 <div class="list-sort">
                     <p>
                         <input type="radio" checked="checked" name="sort" id="priss1" value="pris">
-                        <label for="priss">Giá cơ bản cho 1 người lớn</label></p>
+                        <label for="priss">Giá cơ bản cho 1 người lớn</label>
+                    </p>
                     <p>
                         <input type="radio" name="sorthour" id="hours1" value="hours">
                         <label for="hours">Giá đã bao gồm thuế & phí</label><br>
@@ -174,18 +143,22 @@ $result = $mysqli->query("SELECT `city_id`,`name_city`,`code` FROM `city_code` O
                     <h4 class="display-sort">Chế độ hiển thị</h4>
                     <p>
                         <input type="radio" checked="checked" name="sort" id="priss" value="pris">
-                        <label for="priss">Giá cơ bản cho 1 người lớn</label></p>
+                        <label for="priss">Giá cơ bản cho 1 người lớn</label>
+                    </p>
                     <p>
                         <input type="radio" name="sorthour" id="hours" value="hours">
                         <label for="hours">Giá đã bao gồm thuế & phí</label><br>
                     </p>
                 </div>
             </div>
-            <br>
+            <?php
+                        include "./frm-timve.php";
+                        ?>
             <div class=" puil-service bg-white">
                 <div class="service-header">
                     <h3 class="big-title">
-                        <span> Các hình thức thanh toán</span></h3>
+                        <span> Các hình thức thanh toán</span>
+                    </h3>
                     <div class="bank1">
                         <ul>
                             <li>
@@ -212,7 +185,8 @@ $result = $mysqli->query("SELECT `city_id`,`name_city`,`code` FROM `city_code` O
             <div class="big-font bg-white">
                 <h3 class="big-title">
 
-                    <span> Mua vé máy bay bằng hình thức</span></h3>
+                    <span> Mua vé máy bay bằng hình thức</span>
+                </h3>
 
                 <div class="line1">
                     <img src="./images/bgNumber1.png" alt="">

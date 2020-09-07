@@ -1,0 +1,97 @@
+.maincontent {
+  margin: 10px 0; }
+  .maincontent .information-content {
+    background: #fff;
+    padding: 0 0 20px 0; }
+    .maincontent .information-content .paytitle {
+      box-shadow: 0 1px 5px #888;
+      border-radius: 5px; }
+    .maincontent .information-content .title {
+      color: #ff7a00;
+      font-size: 20px;
+      text-transform: uppercase;
+      background: #0270b5;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 5px; }
+    .maincontent .information-content .payment-heading {
+      margin-top: 5px; }
+      .maincontent .information-content .payment-heading .mesage {
+        padding: 10px;
+        font-weight: 500;
+        background: aquamarine; }
+      .maincontent .information-content .payment-heading .bor {
+        border-top: #000 dashed 1px;
+        margin-top: 10px; }
+        .maincontent .information-content .payment-heading .bor h4 {
+          padding: 10px;
+          margin-bottom: 0;
+          color: red;
+          text-transform: capitalize;
+          /* Style the tab */ }
+        .maincontent .information-content .payment-heading .bor .tab {
+          overflow: hidden;
+          /* Style the buttons that are used to open the tab content */ }
+          .maincontent .information-content .payment-heading .bor .tab .tablinks {
+            border-top: red dashed 1px;
+            border-bottom: red dashed 1px;
+            border-left: none;
+            border-right: none;
+            outline: none;
+            cursor: pointer;
+            padding: 9px 26px;
+            width: 100%;
+            transition: 0.3s;
+            margin: 6px 2px;
+            background-color: #fff;
+            text-align: left;
+            /* Change background color of buttons on hover */ }
+            .maincontent .information-content .payment-heading .bor .tab .tablinks:hover {
+              background-color: #fff;
+              /* Create an active/current tablink class */ }
+            .maincontent .information-content .payment-heading .bor .tab .tablinks.active {
+              background-color: #fff;
+              color: red; }
+        @media only screen and (max-width: 775px) {
+          /* Style the tab content */
+          .maincontent .information-content .payment-heading .bor .tablinks {
+            padding: 9px 3px !important;
+            font-size: 13px; } }
+        .maincontent .information-content .payment-heading .bor .tabcontent {
+          margin-top: 5px;
+          display: none;
+          padding: 20px;
+          animation: fadeEffect 1s; }
+          .maincontent .information-content .payment-heading .bor .tabcontent .br {
+            border-top: 1px solid #000; }
+            .maincontent .information-content .payment-heading .bor .tabcontent .br td {
+              padding: 2px; }
+              .maincontent .information-content .payment-heading .bor .tabcontent .br td img {
+                border: 0px;
+                outline: 0px;
+                vertical-align: baseline;
+                background: transparent;
+                margin: 0px;
+                padding-top: 10px;
+                width: 100px;
+                height: 33px; }
+          .maincontent .information-content .payment-heading .bor .tabcontent p {
+            margin-bottom: 0; }
+          .maincontent .information-content .payment-heading .bor .tabcontent .chon {
+            background: #dba510;
+            padding: 10px;
+            border: 0 none;
+            border-radius: 4px;
+            color: white;
+            font-family: GraublauWeb;
+            text-transform: capitalize;
+            /* Go from zero to full opacity */ }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.maincontent .lulla {
+  padding: 0; }

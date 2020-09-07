@@ -51,6 +51,7 @@ $url_path = str_replace('\\', '/', $url_path);
     <!-- css -->
     <link href="<?php echo $url_path ?>/css/master.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $url_path ?>/css/trangchu.css" rel="stylesheet" type="text/css" />
+    
 
     <!-- js -->
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -64,7 +65,6 @@ $url_path = str_replace('\\', '/', $url_path);
     <?php
         include "./master/header.php";
         include "./trangchu-content.php";
-        include "./master/new-content.php";
         include "./master/footer.php";
         
    ?>

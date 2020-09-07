@@ -1,3 +1,5 @@
+$bg-title: #0270b5;
+
 //Tim chuyen bay
 .search-flight {
     background-color: transparent;
@@ -14,7 +16,6 @@
         z-index: 1;
 
         .wrapfrm {
-            color: #0270b5;
             display: block;
             float: left;
             width: 100%;
@@ -24,7 +25,7 @@
             border-radius: 10px;
 
             .header-search {
-                background: #026987;
+                background: $bg-title;
                 border-radius: 10px 10px 0px 0px;
                 width: 40%;
                 padding: 14px 27px 6px;
@@ -40,7 +41,7 @@
                 }
             }
             .tad-search {
-                background: #026987;
+                background: $bg-title;
                 border-radius: 0px 10px 10px 10px;
                 .black {
                     clear: both;
@@ -120,14 +121,13 @@
 .content-box {
     border: 1px solid #dbdbdb;
     border-radius: 5px;
-    background-color: #f8f8f8;
-    padding: 15px;
-    padding-top: 5px;
+
     .title {
+        background-color: $bg-title;
         position: relative;
         font-size: 16px;
         color: #ff7a00;
-        padding: 10px 0 0;
+        padding: 10px 0 1px;
         display: block;
         text-decoration: none;
         text-transform: uppercase;
@@ -138,14 +138,17 @@
             right: 25%;
         }
     }
-    p {
-        text-align: justify;
-        margin-top: 10px;
-        line-height: 18px;
-        height: 90px;
-        overflow: hidden;
-        font-size: 13px;
-        padding-bottom: 10px;
+    .padding {
+        padding: 0 15px 15px;
+        p {
+            text-align: justify;
+            margin-top: 15px;
+            line-height: 18px;
+            height: 105px;
+            margin-bottom: 5px;
+            overflow: hidden;
+            font-size: 16px;
+        }
     }
 }
 //video
@@ -168,20 +171,25 @@
 
     .title {
         position: relative;
-        h2 {
-            line-height: 30px;
-            font-size: 20px;
-            background: #ececec;
-            color: #5e5b5b;
-            border-bottom: 1px solid #ccc;
-            text-align: center;
-        }
+        background-color: $bg-title;
+        position: relative;
+        color: #ff7a00;
+        padding: 10px 0 1px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ccc;
+
         .xemthem {
-            font-weight: 700;
+            font-weight: 500;
             position: absolute;
             display: block;
-            right: 20px;
-            top: 10px;
+            right: 2%;
+            font-size: 12px;
+            color: #dbdbdb;
+            top: 55%;
+            text-transform: capitalize;
         }
     }
     .data-list {
@@ -332,7 +340,7 @@
         font-style: italic;
         font-weight: 700;
         text-align: center;
-        width: 100%;
+        width: 90%;
         margin: 20px;
         line-height: 35px;
     }
@@ -396,7 +404,7 @@
                 font-size: 18px;
                 font-weight: bold;
                 font-family: GraublauWeb;
-                
+
                 text-transform: uppercase;
             }
         }
@@ -409,7 +417,7 @@
         font-style: italic;
         font-weight: 700;
         text-align: center;
-        width: 100%;
+        width: 90%;
         margin: 20px;
         line-height: 35px;
     }

@@ -1,5 +1,4 @@
 <?php
-
 $url_host = 'http://' . $_SERVER['HTTP_HOST'];
 $pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
 $pattern_uri = '/' . $pattern_document_root . '(.*)$/';
@@ -7,16 +6,39 @@ $pattern_uri = '/' . $pattern_document_root . '(.*)$/';
 preg_match_all($pattern_uri, __DIR__, $matches);
 $url_path = $url_host . $matches[1][0];
 $url_path = str_replace('\\', '/', $url_path);
-require_once "libs/scss.inc.php";
-use ScssPhp\ScssPhp\Compiler;
-$scss = new Compiler();
-$sass = file_get_contents("sass/thongtinkhachhang.scss");
-$style = $scss->compile($sass);
-file_put_contents("css/thongtinkhachhang.css",$style);
 
+    require_once "libs/scss.inc.php";
+
+    use ScssPhp\ScssPhp\Compiler;
+
+    $scss = new Compiler();
+
+    $scss->setImportPaths('sass/');
+
+    $styles = $scss->compile('@import "master.scss";');
+
+    $css = fopen('css/master.css','w');
+    
+    fwrite($css,$styles);
+
+    
+    $styles3 = $scss->compile('@import "thongtinkhachhang.scss";');
+
+    $css3 = fopen('css/thongtinkhachhang.css','w');
+    
+    fwrite($css3,$styles3);
+     // sass->css frm-timve
+     $styles2 = $scss->compile('@import "frm-timve.scss";');
+
+     $css2 = fopen('css/frm-timve.css','w');
+     
+     fwrite($css2,$styles2);
+
+   
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,19 +58,19 @@ file_put_contents("css/thongtinkhachhang.css",$style);
 
     <!-- css -->
     <link href="<?php echo $url_path ?>/css/master.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="<?php echo $url_path ?>/css/thongtinkhachhang.css">
+    <link href="<?php echo $url_path ?>/css/thongtinkhachhang.css" rel="stylesheet">
+    <link href="<?php echo $url_path ?>/css/frm-timve.css" rel="stylesheet" type="text/css" />
     <!-- js -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/swiperJS.js"></script> <!-- swiper js -->
+    <script src="js/swiperJS1.js"></script> <!-- swiper js -->
 </head>
 
 
 <body>
-<?php
+    <?php
   include "./master/header.php";
   include './thongtinkhachhang-content.php';
-  include "./master/new-content.php";
   include "./master/footer.php";
 ?>
 </body>

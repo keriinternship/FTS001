@@ -47,7 +47,6 @@ file_put_contents("css/lienhe.css",$style);
     <?php 
       include "./master/header.php";
         include './lienhe-content.php';
-      include "./master/new-content.php";
       include "./master/footer.php";
     ?>
 </body>

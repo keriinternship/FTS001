@@ -49,7 +49,6 @@ file_put_contents("css/chitiet.css",$style);
     <?php 
       include "./master/header.php";
   include './chitiet-content .php';
-      include "./master/new-content.php";
       include "./master/footer.php"; 
       ?>
 </body>

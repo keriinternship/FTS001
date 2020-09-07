@@ -28,6 +28,12 @@ $url_path = str_replace('\\', '/', $url_path);
     
     fwrite($css1,$styles1);
 
+    // sass->css frm-timve
+    $styles2 = $scss->compile('@import "frm-timve.scss";');
+
+    $css2 = fopen('css/frm-timve.css','w');
+    
+    fwrite($css2,$styles2);
    
 ?>
 <!DOCTYPE html>
@@ -36,7 +42,7 @@ $url_path = str_replace('\\', '/', $url_path);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Thông tin khách hàng</title>
+    <title>Thanh toán</title>
     <!-- bootstrap -->
     <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- fontawesome -->
@@ -53,10 +59,11 @@ $url_path = str_replace('\\', '/', $url_path);
     <!-- css -->
     <link href="<?php echo $url_path ?>/css/master.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $url_path ?>/css/Thanhtoan.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $url_path ?>/css/frm-timve.css" rel="stylesheet" type="text/css" />
     <!-- js -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/swiperJS.js"></script> <!-- swiper js -->
+    <script src="js/swiperJS1.js"></script> <!-- swiper js -->
 </head>
 
 
@@ -66,7 +73,6 @@ $url_path = str_replace('\\', '/', $url_path);
     <?php
   include "./master/header.php";
   include "./ThanhToan-content.php";
-  include "./master/new-content.php";
   include "./master/footer.php";
    ?>
 </body>

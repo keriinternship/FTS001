@@ -24,15 +24,19 @@ $url_path = str_replace('\\', '/', $url_path);
                         </h2>
                     </div>
                     <div class="tad-search ">
-                        <form action="http://localhost/ThucTap/bangoc/HTVMB/ThongtinVe.php" method="post" class="black" name="frmsearchfli">
+                        <form action="ThongtinVe.php" method="post" class="black"
+                            name="frmsearchfli">
                             <div class="headercheck clearfix">
                                 <div class="select">
                                     <p class="input-left">
-                                        <input name="direction" id="khuhoi" value="0" type="radio" class="loaive">
-                                        <label for="loaive_o">Khứ hồi</label></p>
+                                        <input name="direction" id="khuhoi" value="0" type="radio" class="loaive"
+                                            checked="checked">
+                                        <label for="loaive_o">Khứ hồi</label>
+                                    </p>
                                     <p class="input-left">
                                         <input name="direction" id="motchieu" value="1" type="radio" class="loaive">
-                                        <label for="loaive_o">Một chiều</label></p>
+                                        <label for="loaive_o">Một chiều</label>
+                                    </p>
                                 </div>
                             </div>
                             <div class="first clearfix">
@@ -122,39 +126,41 @@ $url_path = str_replace('\\', '/', $url_path);
 <!-- 1số thông tin mới -->
 <div class="maincontent">
     <div class="container">
-        <div class="content white">
+        <div class="content">
             <div class="row">
                 <div class="col-md-6">
                     <!-- tin hot -->
-                    <div class=" homeleft">
+                    <div class=" homeleft white">
                         <div class="content-box">
-                            <h2 class="text-center">
-                                <a href="#" class="title">
+                            <div class="title">
+                                <h5 class="text-center">
                                     Tin hot
                                     <img src="https://vietjet.net/includes/themes/flight/images/hot_price.gif" alt=""
-                                        class="imghot">
-                                    </i>
-                                </a>
-                            </h2>
-                            <p>Săn vé máy bay giá rẻ khuyến mãi Vietjet, Jetstar, VietnamAirlines và Bamboo Airways.
-                                Giá vé máy bay trực tuyến 2020.
-                                Tìm chuyến bay theo cách của bạn, đặt vé máy bay tết sớm để có giá tốt.
-                                Tổng đài vé máy bay phục vụ 24/7.
-                                Đặt vé đoàn Vietnam Airlines cho các công ty du lịch chiết khấu lên đến 30%.
-                                1900 63 6060</p>
-                            <div>
-                                <span class="text-left">
-                                    <a href="#" class="links ">Hướng dẫn mua vé rẻ</a>
-                                </span>
+                                        class="imghot" />
+                                </h5>
                             </div>
+                            <div class="padding">
+                                <p>Săn vé máy bay giá rẻ khuyến mãi Vietjet, Jetstar, VietnamAirlines và Bamboo Airways.
+                                    Giá vé máy bay trực tuyến 2020.<br />
+                                    Tìm chuyến bay theo cách của bạn, đặt vé máy bay tết sớm để có giá tốt.
+                                    Tổng đài vé máy bay phục vụ 24/7.<br />
+                                    Đặt vé đoàn Vietnam Airlines cho các công ty du lịch chiết khấu lên đến 30%:
+                                    1900 63 6060</p>
+                                <div>
+                                    <span class="text-left">
+                                        <a href="#" class="links ">Hướng dẫn mua vé rẻ</a>
+                                    </span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <!-- video chuyen bay -->
                     <div class="video">
                         <div id="youtube-playlist">
-                            <iframe class="yto" allow="autoplay; encrypted-media"
+                            <!-- <iframe class="yto" allow="autoplay; encrypted-media"
                                 src="https://www.youtube.com/embed/j7iMohcHP8w" frameborder="0"
-                                allowfullscreen=""></iframe>
+                                allowfullscreen=""></iframe> -->
                         </div>
                     </div>
                 </div>
@@ -162,9 +168,9 @@ $url_path = str_replace('\\', '/', $url_path);
                     <!-- list ve re -->
                     <div class="latest-best-price">
                         <div class="title">
-                            <h2>
+                            <h5>
                                 Vé Rẻ Bất Ngờ
-                            </h2>
+                            </h5>
                             <a href="#" class="xemthem">xem thêm</a>
                         </div>
 
@@ -197,7 +203,8 @@ $url_path = str_replace('\\', '/', $url_path);
                                 </tr>
                                 <tr style="display: table-row;">
                                     <td class="itinerary"> <strong>TP HCM</strong> đi
-                                        <strong>Vinh</strong> ngày <strong>18/8</strong></td>
+                                        <strong>Vinh</strong> ngày <strong>18/8</strong>
+                                    </td>
                                     <td class="price">299000 VND</td>
                                     <td class="action"> <button title="Đặt vé" data-dep-code="SGN" data-arv-code="VII"
                                             data-dep-date="18/08/2020" class="btn-book-now" type="button"> <span>Đặt
@@ -221,7 +228,8 @@ $url_path = str_replace('\\', '/', $url_path);
                                 </tr>
                                 <tr style="display: table-row;">
                                     <td class="itinerary"> <strong>TP HCM</strong> đi
-                                        <strong>Vinh</strong> ngày <strong>19/8</strong></td>
+                                        <strong>Vinh</strong> ngày <strong>19/8</strong>
+                                    </td>
                                     <td class="price">299000 VND</td>
                                     <td class="action"> <button title="Đặt vé" data-dep-code="SGN" data-arv-code="VII"
                                             data-dep-date="19/08/2020" class="btn-book-now" type="button"> <span>Đặt
@@ -261,12 +269,14 @@ $url_path = str_replace('\\', '/', $url_path);
                                 <li>
                                     <p>"Rất chuyên nghiệp phục vụ tư vấn rất chu đáo. Quyền lợi khách hàng là số 1.."
                                         <br>
-                                        <span class="text-right">Nguyễn Thị Minh Phương - 1234567890</span> </p>
+                                        <span class="text-right">Nguyễn Thị Minh Phương - 1234567890</span>
+                                    </p>
                                 </li>
                                 <li>
                                     <p>"Rất chuyên nghiệp phục vụ tư vấn rất chu đáo. Quyền lợi khách hàng là số 1.."
                                         <br>
-                                        <span class="text-right">Nguyễn Thị Minh Phương - 1234567890</span> </p>
+                                        <span class="text-right">Nguyễn Thị Minh Phương - 1234567890</span>
+                                    </p>
                                 </li>
                             </ul>
                             <a class="viewall" href="http://vebay365.com.vn/Khach-hang-noi-ve-chung-toi">Xem tiếp</a>

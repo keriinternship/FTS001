@@ -107,38 +107,6 @@
     font-family: monospace;
     color: #08088a; }
 
-.find {
-  padding-bottom: 20px;
-  border: 1px solid; }
-  .find .find-banner {
-    border-bottom: 1px dotted red;
-    padding: 20px;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1; }
-  .find .find-select {
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px; }
-  .find label {
-    padding-left: 10px; }
-  .find .btn {
-    padding-right: 20px;
-    text-align: right; }
-    .find .btn:hover {
-      color: red;
-      background-color: #b7aeae; }
-  .find .submit {
-    text-align: center;
-    padding: 5px;
-    background-color: aqua;
-    color: #000;
-    border: none;
-    font-size: 18px;
-    line-height: normal;
-    font-weight: bold;
-    font-family: monospace; }
-
 .sort {
   border: 1px solid #b7aeae;
   padding: 20px;

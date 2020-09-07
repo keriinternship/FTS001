@@ -24,15 +24,20 @@ body {
       border: 1px solid #81daf5; }
 
 .bg-nav {
-  background-color: #ff5115; }
-  .bg-nav .nav li {
+  background-color: #0270b5; }
+  .bg-nav .nav .nav-item {
+    color: #dba510;
     padding: 10px 58px; }
-    .bg-nav .nav li a {
+    .bg-nav .nav .nav-item .nav-link {
+      color: #dba510;
       text-align: center;
       padding: 0px 10px;
-      color: #fff !important;
-      font-size: 20px;
+      font-size: 19px;
       text-transform: uppercase; }
+    .bg-nav .nav .nav-item:hover {
+      background-color: #dba510; }
+      .bg-nav .nav .nav-item:hover .nav-link {
+        color: #000; }
 
 @media only screen and (max-width: 993px) {
   nav {
@@ -49,7 +54,8 @@ body {
     padding: 10px 40px; } }
 
 .type-new {
-  background-color: #266999; }
+  background-color: #266999;
+  padding: 30px 0; }
   .type-new .title {
     font-family: Bebeboo-Regular;
     font-weight: 400;
@@ -84,7 +90,7 @@ body {
 .footer {
   background-color: #266999;
   color: #fff;
-  padding: 50px 0; }
+  padding: 30px 0; }
   .footer p {
     font-size: 20px; }
   .footer h5 {

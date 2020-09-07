@@ -1,5 +1,4 @@
-
-   function openCity(evt, cityName) {
+function openCity(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -21,4 +20,3 @@
 
 }
 //document.getElementById("defaultOpen").click();
-
