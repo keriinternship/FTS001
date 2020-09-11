@@ -1,0 +1,98 @@
+.type-chitiet {
+    .max-title {
+        background: #fff;
+        padding-top: 20px;
+        .title-sg {
+            padding-bottom: 20px;
+            font-family: arial, sans-serif;
+            font-weight: 400;
+            color: #ff7a00;
+            padding-top: 20px;
+            border-radius: 10px;
+            background: #0270b5;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .justify {
+            margin: 0 0 10px;
+            font-family: Bebeboo-Regular;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: justify;
+        }
+        .justify1 {
+            margin: 0 0 10px;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: justify;
+        }
+        .img-sg {
+            text-align: center;
+        }
+        .cmt-sg {
+            text-align: center;
+            font-style: italic;
+            font-size: 16px;
+            font-family: Bebeboo-Regular;
+            font-weight: 400;
+            line-height: 23px;
+            padding-bottom: 40px;
+        }
+       
+        .table-content {
+            padding-bottom: 20px;
+            border-spacing: 0px;
+          
+            td {
+                border: 1px solid #dddddd;
+                text-align: center;
+                padding-left: 60px;
+                padding-right: 60px;
+               
+            }
+        }
+        .img-sg-book {
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    .max-view {
+        background: #fff;
+        .category {
+            font-family: Bebeboo-SemiBold;
+            padding-top: 40px;
+            font-size: 20px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+        .list-landing{
+            a.bmt {
+                display: block;
+            }
+        }
+        .category1{
+            font-family: Bebeboo-SemiBold;
+            font-size: 16px;
+           a{
+            color: #000;
+
+           }
+           .pad10{
+            border-bottom: 1px solid #dddddd;
+            padding-bottom: 10px;
+        }
+        .desc{
+            font-size: 15px;
+            color: #000;
+            text-align: justify;
+            height: 100px;
+            overflow: hidden;
+           }
+       }
+    }
+}

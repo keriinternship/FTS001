@@ -1,0 +1,221 @@
+/*content*/
+.mes {
+  color: blue;
+  background-color: #fff;
+  padding: 10px; }
+  .mes-title {
+    line-height: 30px; }
+  .mes-im {
+    display: block;
+    padding: 15px 5px;
+    text-align: right; }
+    .mes-im .left {
+      float: left; }
+  .mes .place {
+    background-image: url("../images/bg/bg-diadiemjpg.jpg");
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff; }
+
+.ce-title-line {
+  width: 20%;
+  height: 4px;
+  background-color: #fccb06;
+  margin: 15px 88% 0 auto; }
+  .ce-title-line::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.khoangcach {
+  height: 30px; }
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  /* Style the buttons that are used to open the tab content */ }
+  .tab .tablinks {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 26px;
+    transition: 0.3s;
+    margin: 0 2px;
+    background-color: #ddd;
+    /* Change background color of buttons on hover */ }
+    .tab .tablinks:hover {
+      background-color: #fff;
+      /* Create an active/current tablink class */ }
+    .tab .tablinks.active {
+      background-color: #fff;
+      color: red;
+      border-top: red solid 3px; }
+
+@media only screen and (max-width: 775px) {
+  .tablinks {
+    padding: 9px 3px !important;
+    font-size: 13px; } }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+  animation: fadeEffect 1s; }
+  .tabcontent .itemfli {
+    border-top: #000 solid 1px;
+    background-color: cornsilk; }
+    .tabcontent .itemfli .fli {
+      width: 145px;
+      padding: 15px 0;
+      text-align: center; }
+    .tabcontent .itemfli .price {
+      color: red; }
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/*Xem chi tiết
+ .accordion {
+ background-color: #eee;
+ color: #444;
+ cursor: pointer;
+ padding: 18px;
+ width: 100%;
+ border: none;
+ text-align: left;
+ outline: none;
+ font-size: 15px;
+ transition: 0.4s;
+ }
+ .panel{
+ padding: 0 18px;
+ background-color: white;
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.2s ease-out;
+ }
+ .active, .accordion:hover {
+ background-color: #ccc;
+ }
+ .accordion:after {
+ content: '\002B';
+ color: #777;
+ font-weight: bold;
+ float: right;
+ margin-left: 5px;
+ }
+ .active:after {
+ content: "\2212";
+ } */
+.puil-information {
+  padding: 20px; }
+
+.big-font {
+  padding-right: 20px;
+  border: 1px solid #b7aeae;
+  padding: 20px; }
+  .big-font .line1 {
+    padding-bottom: 20px; }
+    .big-font .line1 .inside1 {
+      color: #08088a;
+      font-size: 13px;
+      line-height: 23px;
+      font-weight: bold;
+      font-family: monospace;
+      padding: 20px; }
+  .big-font .line3 .phone {
+    padding: 20px;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: bold;
+    font-family: monospace;
+    color: #08088a; }
+
+.find {
+  padding-bottom: 20px;
+  border: 1px solid; }
+  .find .find-banner {
+    border-bottom: 1px dotted red;
+    padding: 20px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1; }
+  .find .find-select {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .find label {
+    padding-left: 10px; }
+  .find .btn {
+    padding-right: 20px;
+    text-align: right; }
+    .find .btn:hover {
+      color: red;
+      background-color: #b7aeae; }
+  .find .submit {
+    text-align: center;
+    padding: 5px;
+    background-color: aqua;
+    color: #000;
+    border: none;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: bold;
+    font-family: monospace; }
+
+.sort {
+  border: 1px solid #b7aeae;
+  padding: 20px;
+  font-size: 13px;
+  line-height: normal;
+  font-weight: bold;
+  font-family: monospace; }
+
+.filter {
+  border: 1px solid #b7aeae;
+  padding-left: 20px;
+  font-size: 13px;
+  line-height: normal;
+  font-weight: bold;
+  font-family: monospace; }
+
+.puil-banner {
+  border-right: 1px dotted; }
+
+.puil-service {
+  border: 1px solid #b7aeae; }
+  .puil-service .service-header {
+    padding: 20px; }
+    .puil-service .service-header .bank1 {
+      font-size: 13px;
+      line-height: 23px;
+      font-weight: bold;
+      font-family: monospace; }
+
+.chatlist {
+  padding: 20px; }
+  .chatlist .chat1 {
+    margin-left: 20px; }
+
+.big-title {
+  border-bottom: 1px dotted red;
+  padding-bottom: 10px;
+  color: red; }
+
+a {
+  color: blue;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+td, th {
+  padding-left: 10px; }
